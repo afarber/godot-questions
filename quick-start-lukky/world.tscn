@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bekppdbdv3163"]
+
+[ext_resource type="Texture2D" uid="uid://nuarr548gpl0" path="res://grids/Dark/texture_04.png" id="1_od45v"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iovdy"]
+albedo_texture = ExtResource("1_od45v")
+
+[node name="World" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+material_override = SubResource("StandardMaterial3D_iovdy")
+custom_aabb = AABB(2.08165e-12, -0.5, 2.08165e-12, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+size = Vector3(1000, 1, 1000)
