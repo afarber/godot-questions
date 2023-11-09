@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bbdj0n6vx0ej8"]
+
+[node name="World" type="Node3D"]
+
+[node name="Player" type="CharacterBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
