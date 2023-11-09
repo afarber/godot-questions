@@ -4,10 +4,15 @@
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iovdy"]
 albedo_texture = ExtResource("1_od45v")
+uv1_triplanar = true
 
 [node name="World" type="Node3D"]
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
+[node name="Floor" type="CSGBox3D" parent="."]
 material_override = SubResource("StandardMaterial3D_iovdy")
 custom_aabb = AABB(2.08165e-12, -0.5, 2.08165e-12, 2.08165e-12, 2.08165e-12, 2.08165e-12)
 size = Vector3(1000, 1, 1000)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.5, 2.08165e-12)
+size = Vector3(4, 4, 4)
