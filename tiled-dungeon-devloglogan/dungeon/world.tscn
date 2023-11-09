@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bbdj0n6vx0ej8"]
 
-[ext_resource type="MeshLibrary" uid="uid://cld0ic6k6l40d" path="res://tileset.tres" id="1_kd1xr"]
+[ext_resource type="MeshLibrary" uid="uid://c8ssiohjkde1q" path="res://tileset.tres" id="1_kd1xr"]
 
 [node name="World" type="Node3D"]
 
@@ -12,3 +12,6 @@
 mesh_library = ExtResource("1_kd1xr")
 cell_size = Vector3(1, 1, 1)
 cell_center_y = false
+data = {
+"cells": PackedInt32Array(65535, 0, 2, 0, 0, 2, 0, 65535, 2, 65535, 65535, 2, 65535, 65534, 0, 0, 65534, 0, 1, 65535, 1441792, 1, 0, 1441792, 65534, 0, 1048576, 65534, 65535, 1048576, 1, 65534, 1, 65534, 65534, 1048577)
+}
