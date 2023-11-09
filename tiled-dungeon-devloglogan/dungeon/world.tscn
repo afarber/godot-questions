@@ -1,7 +1,14 @@
-[gd_scene format=3 uid="uid://bbdj0n6vx0ej8"]
+[gd_scene load_steps=2 format=3 uid="uid://bbdj0n6vx0ej8"]
+
+[ext_resource type="MeshLibrary" uid="uid://cld0ic6k6l40d" path="res://tileset.tres" id="1_kd1xr"]
 
 [node name="World" type="Node3D"]
 
 [node name="Player" type="CharacterBody3D" parent="."]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("1_kd1xr")
+cell_size = Vector3(1, 1, 1)
+cell_center_y = false
